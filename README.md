@@ -4,13 +4,13 @@ Mini-projetos desenvolvidos para as disciplinas de **Datavis Studio II** e **Des
 
 
 ### Quiz
-* Protótipo realizado no Figma
+* Protótipo realizado no [Figma](https://www.figma.com/proto/V7br9pdRCxaAF93NM7LAU5/datavizII?page-id=0%3A1&node-id=23%3A1869&scaling=scale-down)
 * Página Web
 * Repositório
 
 
 ### Passo a passo
-* Protótipo realizado no Flourish
+* Protótipo realizado no [Flourish](https://public.flourish.studio/story/1556850/)
 * Página Web
 * Repositório
 
@@ -21,11 +21,11 @@ Mini-projetos desenvolvidos para as disciplinas de **Datavis Studio II** e **Des
 * Repositório
 
 ### Filtro
-* Protótipo realizado no Flourish
+* Protótipo realizado no [Flourish](https://public.flourish.studio/visualisation/10396175/)
 * Página Web
 * Repositório
 
 ### Mapa
-* Protótipo realizado no Flourish
+* Protótipo realizado no [Flourish](https://public.flourish.studio/visualisation/10532734/)
 * Página Web
 * Repositório
