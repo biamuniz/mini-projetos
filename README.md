@@ -16,7 +16,6 @@ Mini-projetos desenvolvidos para as disciplinas de **Datavis Studio II** e **Des
 
 
 ### Calculadora
-* Protótipo realizado no Figma
 * Página Web
 * Repositório
 
