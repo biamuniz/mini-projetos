@@ -10,7 +10,7 @@ Mini-projetos desenvolvidos para as disciplinas de **Datavis Studio II** e **Des
 
 
 ### Passo a passo
-* Protótipo realizado no Flourish
+* Protótipo realizado no [Flourish](https://public.flourish.studio/story/1556850/)
 * Página Web
 * Repositório
 
@@ -21,11 +21,11 @@ Mini-projetos desenvolvidos para as disciplinas de **Datavis Studio II** e **Des
 * Repositório
 
 ### Filtro
-* Protótipo realizado no Flourish
+* Protótipo realizado no [Flourish](https://public.flourish.studio/visualisation/10396175/)
 * Página Web
 * Repositório
 
 ### Mapa
-* Protótipo realizado no Flourish
+* Protótipo realizado no [Flourish](https://public.flourish.studio/visualisation/10532734/)
 * Página Web
 * Repositório
