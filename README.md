@@ -4,7 +4,7 @@ Mini-projetos desenvolvidos para as disciplinas de **Datavis Studio II** e **Des
 
 
 ### Quiz
-* Protótipo realizado no Figma
+* Protótipo realizado no [Figma](https://www.figma.com/proto/V7br9pdRCxaAF93NM7LAU5/datavizII?page-id=0%3A1&node-id=23%3A1869&scaling=scale-down)
 * Página Web
 * Repositório
 
