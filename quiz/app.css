@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400;600;700;800&display=swap');
+
+
+/* Aplica estilos gerais na página */
+body {
+  background-color: gainsboro;
+  color: #000000;
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Impede que quiz fique muito largo */
+.quiz {
+  margin-top: 30px;
+  width: 100%;
+  max-width: 700px;
+  align-items: center;
+  text-align: center;
+}
+
+/* Impede events de clique após o primeiro clique */
+.quiz.inactive {
+  pointer-events: none;
+}
+
+/* Estiliza o título */
+h1 {
+  font-size: 30px;
+}
+
+ol {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Estiliza alternativas */
+li {
+  background: GhostWhite;
+  margin: 2px;
+  height: 70px;
+  padding-left: 5%;
+  display: flex;
+  flex-grow: 1;
+  text-align: center;
+  align-items: center;
+  list-style-type: none;
+  font-size: 25px;
+  border-radius: 30px;
+}
+
+/* Muda cor de fundo ao passar o cursor por cima */
+li:hover {
+  background: Lavender;
+  cursor: pointer;
+  font-weight: bolder;
+}
+
+/* Muda a cor quando clicar (o padrão é errar) */
+li.clicked {
+  background: rgb(253, 26, 26);
+  color: White;
+}
+
+/* Se clicar na alternativa correta, aplica esses estilos */
+li.clicked.correct {
+  background: rgb(64, 224, 72);
+  font-weight: bolder;
+  color: Indigo;
+}
+
+/* Reduz largura da imagem */
+img {
+  width: 80%;
+}
+
+/* Aplica negrito no texto de resultado */
+.result {
+  font-weight: bold;
+  color: green;
+}
+
+/* Esconde items para mostrar depois */
+.answer,
+texto {
+  display: none;
+  font-size: 26px;
+}
+
+.counter{
+  font-size: 26px;
+  font-weight: bolder;
+}
+
+#next{
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  color: #ffffff;
+  font-size: 20px;
+  font-family: 'Bitter', serif;
+  background: #d9348c;
+  padding: 10px 20px 10px 20px;
+  margin-bottom: 30px;
+}
