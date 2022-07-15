@@ -22,7 +22,7 @@ Mini-projetos desenvolvidos para as disciplinas de **Datavis Studio II** e **Des
 ### Filtro
 * Protótipo realizado no [Flourish](https://public.flourish.studio/visualisation/10396175/)
 * [Página Web](https://biamuniz.github.io/mini-projetos/filtro/)
-* [Repositório](https://github.com/biamuniz/mini-projetos/filtro/)
+* [Repositório](https://github.com/biamuniz/mini-projetos/tree/main/filtro)
 
 ### Mapa
 * Protótipo realizado no [Flourish](https://public.flourish.studio/visualisation/10532734/)
