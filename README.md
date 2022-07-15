@@ -17,7 +17,7 @@ Mini-projetos desenvolvidos para as disciplinas de **Datavis Studio II** e **Des
 
 ### Calculadora
 * [Página Web](https://biamuniz.github.io/mini-projetos/calculadora/)
-* [Repositório](https://github.com/biamuniz/mini-projetos/calculadora)
+* [Repositório](https://github.com/biamuniz/mini-projetos/tree/main/calculadora)
 
 ### Filtro
 * Protótipo realizado no [Flourish](https://public.flourish.studio/visualisation/10396175/)
