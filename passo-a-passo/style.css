@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@700&family=Raleway&display=swap');
+
+body {
+  font-family: 'Raleway', sans-serif;
+  color: #1d1d1d;
+  background-color: #e8f0ec;
+}
+h1{
+  font-family: 'Bitter', serif;
+  font-size:50px;
+}
+.wrapper {
+  padding: 96px 0;
+}
+
+.font-secondary {
+  font-family: 'Lora', serif !important;
+}
+
+
+.text-h2 {
+  font-size: 32px;
+  line-height: 36px;
+  font-weight: 500;
+  @media (min-width: @screen-sm-min) {
+    font-size: 28px;
+    line-height: 32px;
+  }
+}
+
+p{
+  font-size:20px;
+}
+
+.text-body-1 {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 32px;
+  @media (min-width: @screen-sm-min) {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+.text-body-2 {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: justify;
+  @media (min-width: @screen-sm-min) {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+a {
+  color: #104E8B !important;
+  border-bottom: 2px solid #104E8B;
+  text-decoration: none;
+  word-break: break-word;
+  }
+
+  /* Small devices (tablets, 768px and up) */
+  /* @media (min-width: @screen-sm-min) { ... } */
+
+  /* Medium devices (desktops, 992px and up) */
+  /* @media (min-width: @screen-md-min) { ... } */
+
+  /* Large devices (large desktops, 1200px and up) */
+  /* @media (min-width: @screen-lg-min) { ... } */
+
+#scrolly__section {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /* background-color: #f3f3f3; */
+  padding: 1rem;
+}
+
+#scrolly__section > * {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.scrolly__content {
+  position: relative;
+  padding: 0 1rem;
+  width: 100%;
+}
+
+.scrolly__chart {
+  position: -webkit-sticky;
+  position: sticky;
+  width: 100%;
+  margin: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  z-index: 0;
+}
+
+.scrolly__chart iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.step {
+  margin: 0 auto 2rem auto;
+  display: flex;
+  justify-content: center;
+  align-items:stretch;      
+}
+
+.step:last-child {
+  margin-bottom: 0;
+}
+
+
+.step p {
+  padding: 1rem;
+}
+
+iframe {
+  border: unset;
+}
+
+footer{
+  margin-top: 10px;
+  padding: 25px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+  color: black;
+  text-align: center;
+}

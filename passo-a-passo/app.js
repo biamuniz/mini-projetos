@@ -1,56 +1,58 @@
-let botoes = document.querySelectorAll(".botoes button");
-let passos = document.querySelectorAll(".passos > div");
-
-// // código executado ao clicar
-// function aoClicar(event){
-//     let botaoAtual = event.target;
-//     let dataAlvo = botaoAtual.dataset.alvo;// .passo-3
-
-//     let elementoAlvo = document.querySelector(dataAlvo);
-//     let passoAnterior = document.querySelector('.passo-ativo');
-//     let botaoAnterior = document.querySelector('.botao-ativo');
-
-//     if(botaoAtual !== botaoAnterior){
-//         // inserir a classe 'passo-ativo' no elemento alvo
-//         elementoAlvo.classList.add('passo-ativo');
-//         // remover a classe 'passo-ativo' do elemento anteriormente exibido
-//         passoAnterior.classList.remove('passo-ativo');
-
-//         // adiciona a classe 'botao-ativo' ao botão clicado
-//         botaoAtual.classList.add('botao-ativo');
-//         // remove a classe 'botao-ativo' do botão anterior
-//         botaoAnterior.classList.remove('botao-ativo');
-//     }
-// }
-function aoClicar(event){ 
-    let botaoAtual = event.target;
-    let dataAlvo = botaoAtual.dataset.alvo; // data-alvo=".passo-0"
+var scrolly = d3.select("#scrolly__section");
+var chart = scrolly.select(".scrolly__chart");
+var content = scrolly.select(".scrolly__content");
+var step = content.selectAll(".step");
     
-    let elementoAlvo = document.querySelector(dataAlvo);
-    let passoAnterior = document.querySelector('.passo-ativo');
-    let botaoAnterior = document.querySelector('.botao-ativo');
-
-    if(botaoAtual !== botaoAnterior){
-        // remove a classe 'passo-ativo' do elemento que estava exibido, para escondê-lo
-        passoAnterior.classList.remove('passo-ativo');
-        // adiciona a classe 'passo-ativo' ao elemento que deve ser exibido
-        elementoAlvo.classList.add('passo-ativo');
-
-        // adiciona a classe 'botao-ativo' ao botao clicado
-        botaoAtual.classList.add('botao-ativo');
-        // remove a classe 'botao-ativo' do botao anterior
-        botaoAnterior.classList.remove('botao-ativo');
+// initialize the scrollama
+var scroller = scrollama();
+    
+// generic window resize listener event
+function handleResize() {
+    // 1. update height of step elements
+    var stepH = Math.floor(window.innerHeight * 1);
+    step.style("height", stepH + "px");
+    var figureHeight = window.innerHeight * 0.75;
+    var figureMarginTop = (window.innerHeight - figureHeight) / 2;
+   
+    chart
+        .style("height", figureHeight + "px")
+        .style("top", figureMarginTop + "px");
+    // 3. tell scrollama to update new element dimensions
+        scroller.resize();
     }
+    
+// scrollama event handlers
+function handleStepEnter(response) {
+    const textblock = step.select(".text-block");
 
+    
+    // update graphic based on step
+    const linkHead = 'https://flo.uri.sh/story/1621184/embed#slide-'
+    const slide = response.index
+    
+    d3.select('.scrolly__chart iframe')
+        .attr('src', linkHead + slide);
+    }
+    
+      function setupStickyfill() {
+        d3.selectAll(".sticky").each(function() {
+          Stickyfill.add(this);
+        });
+      }
+    
+function init() {
+    setupStickyfill();
+    handleResize();
+    scroller
+        .setup({
+            step: "#scrolly__section .scrolly__content .step",
+            offset: 0.7,
+            debug: true
+          })
+        .onStepEnter(handleStepEnter);
+    
+        // setup resize event
+    window.addEventListener("resize", handleResize);
 }
-
-for(let botao of botoes){
-    botao.addEventListener('click', aoClicar);
-}
-
-
-// // para cada item da lista de botoes
-// for(let botao of botoes){
-//     // código a repetir
-//     botao.addEventListener('click', aoClicar);
-// }
+    
+init();
